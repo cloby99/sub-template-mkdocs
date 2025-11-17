@@ -1,0 +1,53 @@
+site_name: Subscription Documentation
+site_description: Documentation for subscription features
+site_author: Your Name
+
+# Material theme configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+# Navigation structure with two categories
+nav:
+  - Home: index.md
+  - User Guide:
+      - Getting Started: user-guide/getting-started.md
+      - Managing Subscriptions: user-guide/managing-subscriptions.md
+      - Billing & Payments: user-guide/billing-payments.md
+      - FAQ: user-guide/faq.md
+  - Technical Documentation:
+      - Architecture: technical/architecture.md
+      - API Reference: technical/api-reference.md
+      - Database Schema: technical/database-schema.md
+      - Integration Guide: technical/integration-guide.md
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
